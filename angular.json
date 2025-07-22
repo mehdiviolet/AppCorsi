@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "app-course": {
+    "appCorsi": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -19,14 +19,14 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/assets"
             ],
             "styles": [
               "src/styles.css"
-            ]
+            ],
+            "scripts": [
+  "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+]
           },
           "configurations": {
             "production": {
@@ -56,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "app-course:build:production"
+              "buildTarget": "appCorsi:build:production"
             },
             "development": {
-              "buildTarget": "app-course:build:development"
+              "buildTarget": "appCorsi:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,17 +76,19 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
+              
             ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

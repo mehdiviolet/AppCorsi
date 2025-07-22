@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+img{
+    width: 80px;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.course-component{
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+    gap: 20px;
+}
+
+.course-component p{
+    flex: 1;
+}
+
+p{
+    font-size: large;
+    
+}
+
+.title-img{
+display: flex;
+flex-direction: column;
+flex-basis: 10%;
+}

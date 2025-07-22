@@ -1,7 +1,10 @@
-<navbar-component></navbar-component>
-<div>
-  @for(course of courses; track course.title){
+<div >
 
-  <course-component [course]="course"></course-component>
-  }
+  <navbar-component  ></navbar-component>
+  <div class="container">
+    @for(course of courses; track course.title){
+      
+      <course-component [course]="course"></course-component>
+    }
+  </div>
 </div>
