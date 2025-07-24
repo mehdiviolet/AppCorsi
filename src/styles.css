@@ -1,32 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
-img{
-    width: 80px;
-    height: 100%;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
 
 .container{
     display: flex;
     flex-direction: column;
 }
 
-.course-component{
-    display: flex;
-    margin-bottom: 16px;
-    align-items: center;
-    gap: 20px;
+button{
+    display: inline-block;
+    padding: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
-.course-component p{
-    flex: 1;
-}
-
-p{
-    font-size: large;
-    
-}
-
-.title-img{
-display: flex;
-flex-direction: column;
-flex-basis: 10%;
+button:hover{
+    color: orange;
+    transform: scale(1.05);
 }

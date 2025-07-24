@@ -1,8 +1,12 @@
 <div class="course-component">
   <div class="title-img">
-    <h1>{{ course.title }}</h1>
-    <img [src]="'assets/img/'+ course.imgUrl" alt="pic" />
+    <img [src]="'assets/img/'+ course.imgUrl" alt="pic" class="imgs-courses"/>
     
-</div>
+  </div>
+  <div class="title-desc">
+    <h1>{{ course.title }}</h1>
+
     <p>{{ course.description }}</p>
+  </div>
+  <button (click)="goToDetail()" class="btn-detail">Click here!</button>
 </div>

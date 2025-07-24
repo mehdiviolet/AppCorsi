@@ -1,0 +1,14 @@
+<div >
+
+  <navbar-component  ></navbar-component>
+  <div class="container">
+    <!-- <button (click)="onGetCorso(2)">Get courses!</button> -->
+ 
+    
+    @for(course of courses; track course.id){
+      
+      <course-component [course]="course"></course-component>
+    }
+
+  </div>
+</div>

@@ -1,0 +1,31 @@
+nav{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+}
+
+
+ul{
+    display: flex;
+    gap: 80px;
+/* background-color:firebrick; */
+    list-style: none;
+    /* border: 1px solid rebeccapurple; */
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    border-radius: 50%;
+    cursor: pointer;
+    
+    width: 80px;
+    height: 100%;
+
+
+}
+
+.logo:hover{
+    transform: scale(1.05);
+}

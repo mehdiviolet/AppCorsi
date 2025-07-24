@@ -1,0 +1,55 @@
+.course-component{
+    background-color: rgb(108, 131, 62);
+    display: flex;
+    padding: 8px;
+}
+
+
+
+.course-component{
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+    gap: 20px;
+}
+
+.course-component p{
+    flex: 1;
+}
+
+p{
+    font-size: large;
+    
+}
+
+.title-img{
+display: flex;
+flex-direction: column;
+flex-basis: 10%;
+}
+
+
+
+
+.imgs-courses{
+    width: 220px;
+    height: 100%;
+} 
+
+.title-desc{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid orange;
+    gap: 40px;
+}
+
+
+.btn-detail{
+    border: 1px solid  salmon;
+    border-radius: 8px;
+}
+
+.btn-detail:hover{
+    background-color: salmon;
+    color: rgb(13, 77, 77);
+}
