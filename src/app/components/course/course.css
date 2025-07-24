@@ -39,7 +39,7 @@ flex-basis: 10%;
 .title-desc{
     display: flex;
     flex-direction: column;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     gap: 40px;
 }
 

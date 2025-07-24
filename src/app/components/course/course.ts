@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CourseType } from '../../types/course.type';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'course-component',
@@ -11,11 +11,11 @@ import { RouterLink } from '@angular/router';
 export class Course {
   @Input() course!: CourseType;
 
-  constructor(){}
+  constructor(private router: Router){}
 
 
   goToDetail(){
-    
+    this.router.navigate(['/detail/' + this.course.id])
 
   }
 }
